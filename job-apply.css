@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(./wood-wall.jpg);
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(97, 238, 128, 0.89);
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 10px 18px 6px rgba(0, 0, 0, 0.973);
+    border-radius: 10px;
+}
+.title_small{
+    font-size: 20px;
+}
+
+.form_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+    font-weight:400;
+    margin-bottom: 5px;
+
+}
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #858585;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline-color: rgb(253, 4, 4);
+}
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button {
+    background-color:red;
+    border: #000000 solid 1px;
+    font-weight: 900;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: #5ae93e;
+    border: 1px solid #000000;
+    transition: 0.3s ease-out;
+    color: black;
+    cursor: pointer;
+}
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
+@media (max-width:460px){
+    .textarea_control{
+        grid-column: 1 / span 1;
+    }
+}
